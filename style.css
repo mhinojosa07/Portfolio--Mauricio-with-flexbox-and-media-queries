@@ -14,7 +14,7 @@ header {
  .logo {
   font-family: "Gochi Hand";
   font-size: 52px;
-  color: #bdbdbd;
+  color: #000000;
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -40,7 +40,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #bdbdbd;
+  color: #000000;
   text-decoration: none;
   padding: 0 20px 0 0;
   
@@ -53,7 +53,7 @@ header nav ul li a:hover {
 @media all and (min-width: 700px) {
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
   }
 
   .logo {
@@ -113,7 +113,7 @@ h3 {
   font-weight: 500;
 }
 
-p {
+p, ul {
  font-family: sans-serif;
  line-height: 1.5em;
  margin-bottom: 0;
@@ -136,14 +136,17 @@ a:hover {
 }
 
 footer p {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 20px;
 }
+ 
 
 img.image-enhanced {
   border-radius: 14px;
 }
+
+
 
 .group {
   display: flex;
@@ -170,6 +173,12 @@ img.image-enhanced {
   .group {
     flex-direction: row;
   }
+}
+
+/*---(Smaller Devices)---*/
+@media all and (max-width:790px) {
+  img.image-enhanced { 
+    width: 100%; }
 }
 
 
